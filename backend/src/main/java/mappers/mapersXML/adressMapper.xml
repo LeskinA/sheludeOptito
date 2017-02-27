@@ -1,0 +1,24 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="org.shelude.backend.src.main.java.mappers.adressMapper">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert
+        into adress (
+        id, aud, adress
+        ) values (
+        #{id}, #{aud}, #{adress}
+        )
+    </insert>
+    <select id="selectAll" resultType="contact">
+        select
+        id, lastName, firstName, phone, email
+        from contact
+    </select>
+    <select id="select" resultType="contact">
+        select
+        id, lastName, firstName, phone, email
+        from contact
+        where id = #{value}
+    </select>
+
+</mapper>

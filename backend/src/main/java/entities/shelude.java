@@ -1,6 +1,7 @@
 package entities;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ public class shelude {
     private Timestamp time2;
     private adress adress;
     private academicSubject subject;
+    private List<group> groups;
 
     public shelude(long id, int weekType, int day, Timestamp time1, Timestamp time2, entities.adress adress, academicSubject subject1, List<group> groups) {
         this.id = id;
@@ -23,6 +25,7 @@ public class shelude {
         this.time2 = time2;
         this.adress = adress;
         this.subject = subject1;
+        this.groups = new ArrayList<group>();
     }
 
     public long getId() {
@@ -81,4 +84,11 @@ public class shelude {
         this.subject = subject;
     }
 
+    public List<group> getGroups() {
+        return groups;
+    }
+
+    public void addGroup(group groups) {
+        this.groups.add(groups);
+    }
 }
