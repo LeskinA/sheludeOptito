@@ -11,13 +11,13 @@
     </insert>
     <select id="selectAll" resultType="contact">
         select
-        id, lastName, firstName, phone, email
-        from contact
+        id, aud, adress
+        from adress
     </select>
     <select id="select" resultType="contact">
         select
-        id, lastName, firstName, phone, email
-        from contact
+        id, aud, adress
+        from adress
         where id = #{value}
     </select>
 

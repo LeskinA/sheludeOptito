@@ -1,0 +1,24 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="org.shelude.backend.src.main.java.mappers.academicSubjectMapper">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert
+        into academicSubject (
+        id, name, department
+        ) values (
+        #{id}, #{name}, #{department}
+        )
+    </insert>
+    <select id="selectAll" resultType="academicSheludeubject">
+        select
+        id, name, department
+        from academicSubject
+    </select>
+    <select id="select" resultType="academicSheludeubject">
+        select
+        id, name, department
+        from academicSubject
+        where id = #{value}
+    </select>
+
+</mapper>
