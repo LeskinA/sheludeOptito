@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
       <module fileurl="file://$PROJECT_DIR$/sheludeOptito.iml" filepath="$PROJECT_DIR$/sheludeOptito.iml" />
     </modules>
   </component>
